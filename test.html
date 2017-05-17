@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+    <title>USTA NORCAL - Division Listing</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="global_style.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        .table {width:60%;}
+        .table-header {padding:40px;}
+        .table th {border-top: 0px;}
+        .formlist {
+            width: 300px;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+    </style>
+</head>
+<body bgcolor="white" topmargin="0" leftmargin="0">
+
+<!-- begin header -->
+<link href="/css/usta_style-header.css" rel="stylesheet" type="text/css">
+
+<div class="ustaHeaderWrapper" style="width:100%;">
+    <div style="width:100%;" class="ustaNetworkBar">
+        <div class="ustaMiscLinks">
+            <ul>
+                <li style="background-image: url('https://www.ustanorcal.com/images/headers/nb_usta_logo.gif'); visibility: visible;" class="mLinkJoin" id="headerAreYouAMember">
+                    <div>Are You a USTA Member?</div>
+                </li>
+                <li class="mLoginRenew" id="headerLoginOrRenew" style="visibility: visible;">
+                    <a href="http://membership.usta.com/?intloc=networknavJoin" style="background-image:url(https://www.ustanorcal.com/images/headers/nb_join_renew.gif);">Login or Renew</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ustaHeader">
+        <div class="ustaLogo">
+            <div><a href="http://www.norcal.usta.com/"><img alt="USTA Northern California" src="https://assets.usta.com/assets/635/15/nocal.png"></a></div>
+        </div>
+    </div>
+    <div style="background-image: url('https://www.ustanorcal.com/images/headers/nav_bg.gif');" class="ustaPanelNav">
+        <ul class="navBar sf-menu sf-js-enabled">
+            <li id="_26fad00720f_rptHorizontalNav_ctl03_liParent">
+                <a href="http://www.norcal.usta.com/juniors/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl03_aLink" class="mainLink sf-with-ul topnav_links">Youth/Juniors</a>
+            </li>
+
+            <li id="Li1">
+                <a href="http://www.norcal.usta.com/college_tennis/?intloc=headernav" id="topnav_collegetennis" class="mainLink sf-with-ul topnav_links">College Tennis</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl04_liParent">
+                <a href="http://www.norcal.usta.com/Adults/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl04_aLink" class="mainLink sf-with-ul topnav_links">Adults</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl05_liParent">
+                <a href="http://www.norcal.usta.com/coaches_organizers/?intloc=headernav" id="topnav_coaches_organizers" class="mainLink sf-with-ul topnav_links">Coaches/Organizers</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl06_liParent">
+                <a href="http://www.norcal.usta.com/CommunityTennis/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl06_aLink" class="mainLink sf-with-ul topnav_links">Community Tennis</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl08_liParent">
+                <a href="http://www.norcal.usta.com/news_events/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl08_aLink" class="mainLink sf-with-ul topnav_links">News &amp; Events</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl09_liParent">
+                <a href="http://www.norcal.usta.com/membership/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl09_aLink" class="mainLink sf-with-ul topnav_links">Membership</a>
+            </li>
+
+            <li id="_26fad00720f_rptHorizontalNav_ctl10_liParent">
+                <a href="http://www.norcal.usta.com/about_us/?intloc=headernav" id="_26fad00720f_rptHorizontalNav_ctl10_aLink" class="mainLink sf-with-ul topnav_links">About Us</a>
+            </li>
+
+
+            <li id="nav_login">
+
+                <a href="/login" id="ustanorcal_login" class="mainLink sf-with-ul topnav_links">NorCal Login</a>
+
+            </li>
+            <li id="lnk_search">
+                <a href="/search.asp" class="mainLink sf-with-ul topnav_links">Search</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="clear"></div>
+
+<!-- end header -->
+
+
+
+<form name="frm" action="listdivisions.asp" method="post">
+    <table border="0" align="center" width="90%" cellspacing="4" cellpadding="2">
+        <tr><td align="center"><h1>League Divisions</h1></td></tr>
+        <tr><td align="center">
+        </td></tr>
+        <tr>
+            <td align="center" class="alert alert-success">
+                <b>Current or selected league(s)</b>
+                <select class="formlist" name="seasonid" size="1">
+                    <option value="0">-- Current Leagues --</option>
+                    <option value="0"></option>
+
+                    <option value="198">2016 Adult 70 &amp; Over </option>
+                    <option value="196">2016 Combo Doubles</option>
+                    <option value="197">2016 Mixed 55 &amp; Over </option>
+                    <option value="204">2017 Adult 18 &amp; Over </option>
+                    <option value="201">2017 Adult 40 &amp; Over </option>
+                    <option value="206">2017 Adult 55 &amp; Over</option>
+                    <option value="203">2017 Adult 65 &amp; Over </option>
+                    <option value="205">2017 Mixed 18 &amp; Over </option>
+                    <option value="202">2017 Mixed 40 &amp; Over </option>
+                    <option value="207">2017 Mixed Tri-Level </option>
+                    <option value="184">2015 Adult 70 &amp; Over</option>
+                    <option value="182">2015 Combo Doubles</option>
+                    <option value="183">2015 Mixed 55 &amp; Over</option>
+                    <option value="192">2016 Adult 18 &amp; Over </option>
+                    <option value="188">2016 Adult 40 &amp; Over</option>
+                    <option value="195">2016 Adult 55 &amp; Over</option>
+                    <option value="190">2016 Adult 65 &amp; Over</option>
+                    <option value="194">2016 Mixed 18 &amp; Over </option>
+                    <option value="189">2016 Mixed 40 &amp; Over</option>
+                    <option value="193">2016 Mixed Tri-Level Team Tournament</option>
+                    <option value="200">2016 Tri-Level Team Tournament </option>
+                    <option value="199">2017 Adult 40 &amp; Over - Reno/Tahoe</option>
+                    <option value="166">2014 Combo Doubles</option>
+                    <option value="168">2014 Mixed 55 &amp; Over </option>
+                    <option value="177">2015 Adult 18 &amp; Over</option>
+                    <option value="172">2015 Adult 40 &amp; Over</option>
+                    <option value="179">2015 Adult 55 &amp; Over</option>
+                    <option value="176">2015 Adult 65 &amp; Over</option>
+                    <option value="180">2015 Mixed 18 &amp; Over </option>
+                    <option value="173">2015 Mixed 40 &amp; Over</option>
+                    <option value="178">2015 Mixed Tri-Level Team Tournament</option>
+                    <option value="174">2015 SOCIAL NETS 18-39 </option>
+                    <option value="186">2015 Tri-Level Team Tournament</option>
+                    <option value="185">2016 Adult 40 &amp; Over - Reno</option>
+                    <option value="146">2013 Combo League</option>
+                    <option value="145">2013 Mixed 40 &amp; Over</option>
+                    <option value="158">2014 Adult 18 &amp; Over</option>
+                    <option value="152">2014 Adult 40 &amp; Over </option>
+                    <option value="153">2014 Adult 55 &amp; Over</option>
+                    <option value="155">2014 Adult 65 &amp; Over</option>
+                    <option value="167">2014 Adult 70 &amp; Over </option>
+                    <option value="161">2014 Demo League</option>
+                    <option value="163">2014 Mixed Doubles 18 &amp; Over</option>
+                    <option value="164">2014 Mixed Doubles 40 &amp; Over</option>
+                    <option value="159">2014 North County Tri Level Spring</option>
+                    <option value="160">2014 PEARL Spring</option>
+                    <option value="154">2014 Pilot 2.5 Green Dot Ball Ladies Week Day League</option>
+                    <option value="171">2014 Tri-Level Team Tournament</option>
+                    <option value="169">2015 Adult 40 &amp; Over - Reno</option>
+                    <option value="134">2012 Combo League</option>
+                    <option value="135">2012 North County Mixed Up Trilevel FALL</option>
+                    <option value="130">2012 Reno Combo League</option>
+                    <option value="131">2012 Super Senior 70 League</option>
+                    <option value="141">2013 Adult 18 &amp; Over</option>
+                    <option value="138">2013 Adult 40 &amp; Over</option>
+                    <option value="142">2013 Adult 55 &amp; Over</option>
+                    <option value="140">2013 Adult 65 &amp; Over</option>
+                    <option value="148">2013 Adult 70 &amp; Over</option>
+                    <option value="147">2013 Demo League</option>
+                    <option value="144">2013 Mixed 18 &amp; Over</option>
+                    <option value="139">2013 Mixed 55 &amp; Over</option>
+                    <option value="143">2013 North County Mixed Up TriLevel Spring</option>
+                    <option value="136">2013 Reno Adult 40 &amp; Over </option>
+                    <option value="149">2013 Tri-Level Team Tournament</option>
+                    <option value="150">2014 Reno Adult 40 &amp; Over</option>
+                    <option value="98">2010 Demo League</option>
+                    <option value="110">2011 70+ Pilot League</option>
+                    <option value="111">2011 Combo League</option>
+                    <option value="113">2011 Senior Tri-Level</option>
+                    <option value="116">2011 Solano/Yolo Cty Ladies Daytime League </option>
+                    <option value="123">2012 Adult League</option>
+                    <option value="132">2012 Daytime Ladies League 2.5+</option>
+                    <option value="129">2012 Fifty Mixed</option>
+                    <option value="127">2012 Mixed Doubles</option>
+                    <option value="119">2012 North County Mixed Up Tri Level Spring</option>
+                    <option value="125">2012 Peninsula Ladies-EntryLvl Pilot Daytime</option>
+                    <option value="112">2012 Reno Senior League</option>
+                    <option value="117">2012 Senior League</option>
+                    <option value="126">2012 Super Senior 60</option>
+                    <option value="122">2012 Super Senior 65</option>
+                    <option value="137">2012 Tri Level Team Tournament</option>
+                    <option value="128">2012 Up Down League</option>
+                    <option value="92">2010 Hi-Level Tri-Level Pilot League</option>
+                    <option value="85">2010 Super Senior 70 Pilot League</option>
+                    <option value="99">2011 Adult League</option>
+                    <option value="105">2011 Fifty Mixed</option>
+                    <option value="97">2011 Mixed League </option>
+                    <option value="108">2011 North County Mixed Up Tri Level</option>
+                    <option value="115">2011 North County Mixed Up Tri Level Season Two</option>
+                    <option value="90">2011 Reno Mixed League</option>
+                    <option value="86">2011 Senior League</option>
+                    <option value="104">2011 Super Senior 60</option>
+                    <option value="103">2011 Super Senior 65</option>
+                    <option value="106">2011 Up/Down Pilot League</option>
+                    <option value="79">2010 Adult League</option>
+                    <option value="83">2010 Combo League</option>
+                    <option value="94">2010 CV Tri-Level Pilot League</option>
+                    <option value="82">2010 Fifty Mixed League</option>
+                    <option value="78">2010 Mixed League</option>
+                    <option value="73">2010 Reno Mixed League</option>
+                    <option value="71">2010 Senior League</option>
+                    <option value="95">2010 Sierra Foothills Tri-Level Pilot League</option>
+                    <option value="81">2010 Super Senior 60 League</option>
+                    <option value="80">2010 Super Senior 65 League</option>
+                    <option value="84">2010 Up/Down Pilot League</option>
+                    <option value="60">2008 Combo League</option>
+                    <option value="65">2009 Adult League</option>
+                    <option value="77">2009 Benicia Corporate Pilot</option>
+                    <option value="70">2009 Combo League</option>
+                    <option value="69">2009 Fifty Mixed League</option>
+                    <option value="63">2009 Mixed League</option>
+                    <option value="61">2009 Reno Mixed League</option>
+                    <option value="76">2009 Sacramento 70+ Pilot Mens 7.0</option>
+                    <option value="62">2009 Senior League</option>
+                    <option value="68">2009 Super Senior 60 League</option>
+                    <option value="67">2009 Super Senior 65 League</option>
+                    <option value="53">2007 Combo League</option>
+                    <option value="56">2008 Adult League</option>
+                    <option value="58">2008 Fifty Mixed League</option>
+                    <option value="55">2008 Mixed League</option>
+                    <option value="54">2008 Senior League</option>
+                    <option value="59">2008 Super Senior 60 League</option>
+                    <option value="57">2008 Super Senior-65 League</option>
+                    <option value="49">2007 Adult League</option>
+                    <option value="51">2007 Fifty Mixed League</option>
+                    <option value="48">2007 Mixed League</option>
+                    <option value="47">2007 Senior League</option>
+                    <option value="52">2007 Super Senior 60 League</option>
+                    <option value="50">2007 Super Senior-65 League</option>
+                    <option value="42">2006 Adult League</option>
+                    <option value="46">2006 Combo League</option>
+                    <option value="44">2006 Fifty Mixed League</option>
+                    <option value="41">2006 Mixed League</option>
+                    <option value="40">2006 Senior League</option>
+                    <option value="45">2006 Super Senior 60 League</option>
+                    <option value="43">2006 Super Senior-65 League</option>
+                    <option value="35">2005 Adult League</option>
+                    <option value="39">2005 Combo League</option>
+                    <option value="37">2005 Fifty Mixed League</option>
+                    <option value="33">2005 Mixed League</option>
+                    <option value="34">2005 Senior League</option>
+                    <option value="38">2005 Super Senior 60 League</option>
+                    <option value="36">2005 Super Senior 65 League</option>
+                    <option value="29">2004 Adult League</option>
+                    <option value="32">2004 Combo League</option>
+                    <option value="31">2004 Fifty Mixed League</option>
+                    <option value="27">2004 Mixed League</option>
+                    <option value="28">2004 Senior League</option>
+                    <option value="30">2004 Super Senior League</option>
+                    <option value="23">2003 Adult League</option>
+                    <option value="26">2003 Combo Mens League</option>
+                    <option value="25">2003 Fifty Mixed League</option>
+                    <option value="21">2003 Mixed League</option>
+                    <option value="20">2003 Senior League</option>
+                    <option value="24">2003 Super Senior League</option>
+                    <option value="17">2002 Adult League</option>
+                    <option value="22">2002 Combo Mens League</option>
+                    <option value="19">2002 Fifty Mixed League</option>
+                    <option value="15">2002 Mixed League</option>
+                    <option value="14">2002 Senior League</option>
+                    <option value="18">2002 Super Senior League</option>
+                    <option value="12">2001 Adult League</option>
+                    <option value="10">2001 Mixed League</option>
+                    <option value="11">2001 Senior League</option>
+                    <option value="13">2001 Super Senior League</option>
+                    <option value="8">2000 Adult League</option>
+                    <option value="6">2000 Mixed League</option>
+                    <option value="7">2000 Senior League</option>
+                    <option value="9">2000 Super Senior League</option>
+                    <option value="4">1999 Adult League</option>
+                    <option value="3">1999 Mixed League</option>
+                    <option value="2">1999 Senior League</option>
+                    <option value="5">1999 Super Senior League</option>
+                    <option value="1">1998 Adult League</option></select> <input class="btn btn-success" type="submit" value=" GO " id="submit1" name="submit1"> <a href="http://www.norcal.usta.com/leagues/custom.sps?iType=1945&amp;icustompageid=17189" target="blank"><u>Help with this page</u></a>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<table align="center" width="60%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="left"><h3>Click on the division below to see the teams within that divison.</h3></td>
+    </tr>
+</table>
+
+
+
+
+
+<table align="center" class="table table-striped table-condensed table-hover">
+    <thead>
+    <tr>
+        <th class="table-header" colspan="2" align="left"><b>2017 Mixed 18 &amp; Over </b></th>
+    </tr>
+
+    <tr class="TableLightBG">
+        <th><b>Division name</b></th>
+        <th align="left"><b>Season dates through Sectional Championships</b></th>
+    </tr>
+    </thead>
+
+
+    <tr>
+        <td width="50%"><a href="listteams.asp?leagueid=1964">2017 Mixed 18 &amp; Over 10.0</a></td>
+        <td width="50%">06/19/17 thru 10/08/17</td>
+    </tr>
+
+
+
+    <tr>
+        <td width="50%"><a href="listteams.asp?leagueid=1965">2017 Mixed 18 &amp; Over 6.0</a></td>
+        <td width="50%">06/19/17 thru 10/08/17</td>
+    </tr>
+
+
+
+    <tr>
+        <td width="50%"><a href="listteams.asp?leagueid=1966">2017 Mixed 18 &amp; Over 7.0</a></td>
+        <td width="50%">06/19/17 thru 10/08/17</td>
+    </tr>
+
+
+
+    <tr>
+        <td width="50%"><a href="listteams.asp?leagueid=1967">2017 Mixed 18 &amp; Over 8.0</a></td>
+        <td width="50%">06/19/17 thru 10/08/17</td>
+    </tr>
+
+
+
+    <tr>
+        <td width="50%"><a href="listteams.asp?leagueid=1968">2017 Mixed 18 &amp; Over 9.0</a></td>
+        <td width="50%">06/19/17 thru 10/08/17</td>
+    </tr>
+
+
+
+    <table align="center" class="table table-striped table-condensed table-hover">
+        <thead>
+        <tr>
+            <th class="table-header" colspan="2" align="left"><b>2017 Mixed Tri-Level </b></th>
+        </tr>
+
+        <tr class="TableLightBG">
+            <th><b>Division name</b></th>
+            <th align="left"><b>Season dates through Sectional Championships</b></th>
+        </tr>
+        </thead>
+
+
+        <tr>
+            <td width="50%"><a href="listteams.asp?leagueid=1977">2017 MX Tri-Level Team Tournament 7.0 8.0 9.0</a></td>
+            <td width="50%">06/16/17 thru 06/18/17</td>
+        </tr>
+
+
+
+        <table align="center" class="table table-striped table-condensed table-hover">
+            <thead>
+            <tr>
+                <th class="table-header" colspan="2" align="left"><b>2017 Adult 55 &amp; Over</b></th>
+            </tr>
+
+            <tr class="TableLightBG">
+                <th><b>Division name</b></th>
+                <th align="left"><b>Season dates through Sectional Championships</b></th>
+            </tr>
+            </thead>
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1969">2017 Adult 55 &amp; Over Mens 6.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1970">2017 Adult 55 &amp; Over Mens 7.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1971">2017 Adult 55 &amp; Over Mens 8.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1972">2017 Adult 55 &amp; Over Mens 9.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1973">2017 Adult 55 &amp; Over Womens 6.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1974">2017 Adult 55 &amp; Over Womens 7.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1975">2017 Adult 55 &amp; Over Womens 8.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <tr>
+                <td width="50%"><a href="listteams.asp?leagueid=1976">2017 Adult 55 &amp; Over Womens 9.0</a></td>
+                <td width="50%">06/12/17 thru 09/24/17</td>
+            </tr>
+
+
+
+            <table align="center" class="table table-striped table-condensed table-hover">
+                <thead>
+                <tr>
+                    <th class="table-header" colspan="2" align="left"><b>2017 Adult 18 &amp; Over </b></th>
+                </tr>
+
+                <tr class="TableLightBG">
+                    <th><b>Division name</b></th>
+                    <th align="left"><b>Season dates through Sectional Championships</b></th>
+                </tr>
+                </thead>
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1939">2017 Adult 18 &amp; Over Mens 2.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1940">2017 Adult 18 &amp; Over Mens 3.0</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1941">2017 Adult 18 &amp; Over Mens 3.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1942">2017 Adult 18 &amp; Over Mens 4.0</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1943">2017 Adult 18 &amp; Over Mens 4.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1944">2017 Adult 18 &amp; Over Mens 5.0+</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1945">2017 Adult 18 &amp; Over Mens 5.5+</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1947">2017 Adult 18 &amp; Over Womens 2.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1948">2017 Adult 18 &amp; Over Womens 2.5+ Daytime</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1949">2017 Adult 18 &amp; Over Womens 3.0</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1950">2017 Adult 18 &amp; Over Womens 3.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1951">2017 Adult 18 &amp; Over Womens 3.5 Daytime</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1952">2017 Adult 18 &amp; Over Womens 4.0</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1953">2017 Adult 18 &amp; Over Womens 4.0 Daytime</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1954">2017 Adult 18 &amp; Over Womens 4.5</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1955">2017 Adult 18 &amp; Over Womens 5.0+</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="50%"><a href="listteams.asp?leagueid=1956">2017 Adult 18 &amp; Over Womens Open</a></td>
+                    <td width="50%">03/27/17 thru 08/27/17</td>
+                </tr>
+
+
+
+                <table align="center" class="table table-striped table-condensed table-hover">
+                    <thead>
+                    <tr>
+                        <th class="table-header" colspan="2" align="left"><b>2017 Adult 65 &amp; Over </b></th>
+                    </tr>
+
+                    <tr class="TableLightBG">
+                        <th><b>Division name</b></th>
+                        <th align="left"><b>Season dates through Sectional Championships</b></th>
+                    </tr>
+                    </thead>
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1931">2017 Adult  65 &amp; Over Mens 3.0</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1932">2017 Adult  65 &amp; Over Mens 3.5</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1933">2017 Adult  65 &amp; Over Mens 4.0</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1957">2017 Adult  65 &amp; Over Mens 9.0</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1934">2017 Adult  65 &amp; Over Womens 3.0</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1935">2017 Adult  65 &amp; Over Womens 3.5</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td width="50%"><a href="listteams.asp?leagueid=1936">2017 Adult  65 &amp; Over Womens 4.0</a></td>
+                        <td width="50%">03/06/17 thru 06/21/17</td>
+                    </tr>
+
+
+
+                    <table align="center" class="table table-striped table-condensed table-hover">
+                        <thead>
+                        <tr>
+                            <th class="table-header" colspan="2" align="left"><b>2017 Adult 40 &amp; Over </b></th>
+                        </tr>
+
+                        <tr class="TableLightBG">
+                            <th><b>Division name</b></th>
+                            <th align="left"><b>Season dates through Sectional Championships</b></th>
+                        </tr>
+                        </thead>
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1909">2017 Adult 40 &amp; Over Mens 3.0</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1910">2017 Adult 40 &amp; Over Mens 3.5</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1912">2017 Adult 40 &amp; Over Mens 4.0</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1914">2017 Adult 40 &amp; Over Mens 4.5+</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1915">2017 Adult 40 &amp; Over Mens 5.0+</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1917">2017 Adult 40 &amp; Over Womens 2.5</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1918">2017 Adult 40 &amp; Over Womens 2.5+ Daytime</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1919">2017 Adult 40 &amp; Over Womens 3.0</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1920">2017 Adult 40 &amp; Over Womens 3.5</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1921">2017 Adult 40 &amp; Over Womens 3.5 Daytime</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1922">2017 Adult 40 &amp; Over Womens 4.0</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1916">2017 Adult 40 &amp; Over Womens 4.0 Daytime</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1923">2017 Adult 40 &amp; Over Womens 4.5+</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td width="50%"><a href="listteams.asp?leagueid=1924">2017 Adult 40 &amp; Over Womens 5.0+</a></td>
+                            <td width="50%">01/02/17 thru 06/04/17</td>
+                        </tr>
+
+
+
+                        <table align="center" class="table table-striped table-condensed table-hover">
+                            <thead>
+                            <tr>
+                                <th class="table-header" colspan="2" align="left"><b>2017 Mixed 40 &amp; Over </b></th>
+                            </tr>
+
+                            <tr class="TableLightBG">
+                                <th><b>Division name</b></th>
+                                <th align="left"><b>Season dates through Sectional Championships</b></th>
+                            </tr>
+                            </thead>
+
+
+                            <tr>
+                                <td width="50%"><a href="listteams.asp?leagueid=1925">2017 Mixed 40 &amp; Over 6.0</a></td>
+                                <td width="50%">01/02/17 thru 05/21/17</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td width="50%"><a href="listteams.asp?leagueid=1926">2017 Mixed 40 &amp; Over 7.0</a></td>
+                                <td width="50%">01/02/17 thru 05/21/17</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td width="50%"><a href="listteams.asp?leagueid=1927">2017 Mixed 40 &amp; Over 8.0</a></td>
+                                <td width="50%">01/02/17 thru 05/21/17</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td width="50%"><a href="listteams.asp?leagueid=1928">2017 Mixed 40 &amp; Over 9.0</a></td>
+                                <td width="50%">01/02/17 thru 05/21/17</td>
+                            </tr>
+
+
+
+                        </table>
+
+
+                        <div style="margin:10px; padding:10px;">
+                            <p align="left">Copyright &copy; 2017 United States Tennis Association of Northern California</p>
+                        </div>
