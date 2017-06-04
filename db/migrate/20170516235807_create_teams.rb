@@ -4,10 +4,11 @@ class CreateTeams < ActiveRecord::Migration[5.0]
       t.integer :captain_id
       t.integer :co_captain_id
       t.string :area
-      t.string :home_facility_id
-      t.string :organization_id
+      t.integer :home_facility_id
+      t.integer :organization_id
       t.string :name
       t.integer :division_id
+      t.date :last_complete_save
       t.timestamps
     end
   end

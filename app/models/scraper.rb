@@ -1,9 +1,5 @@
 
 class Scraper
-
-
-
-
   attr_accessor :pages_loaded_count, :players_processed_count, :mod_count, :processed_some
 
   def initialize

@@ -18,8 +18,7 @@ class Division < ApplicationRecord
   has_many :division_memberships
   has_many :teams
 
-  before_validation :sanitize_attributes
-  # validates_presence_of :division_type, :age_group, :level, :gender, :year, :label
+  # before_validation :sanitize_attributes
   DIVISION_TYPES = ['Mixed', 'MX Tri-Level', 'Tri-Level', 'Adult', 'Combo', 'Super Senior', 'Senior']
   AGE_GROUPS = ['18', '40', '50', '55', '60', '65', '70', 'Fifty']
   LEVELS = ['2.0', '2.5', '3.0', '3.5', '4.0', '4.5', '5.0', '5.5',
@@ -44,10 +43,15 @@ class Division < ApplicationRecord
       id = id_from_anchor(link)
       next if self.find_by(id: id)
 
-      erros << create_from_label(id, link.text)
+      errors << create_from_label(id, link.text)
     end
   end
 
+  def url
+    "https://www.ustanorcal.com/listteams.asp?leagueid=#{id}"
+  end
+
+  private
   def self.create_from_label(id, label)
     found = self.find_by(id: id)
     return found if found

@@ -6,24 +6,27 @@ git_source(:github) do |repo_name|
 end
 
 gem 'annotate'
-gem 'rails', '~> 5.0.2'
-gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'rails'
+gem 'pg'
+gem 'puma'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 
 gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'turbolinks'
+gem 'jbuilder'
 gem 'nokogiri'
 gem 'anemone'
 gem 'byebug'
 
 group :development, :test do
-
-  gem 'byebug', platform: :mri
+  gem 'pry-rails'
+  gem 'pry-awesome_print', require: false # use awesome_print without .pryrc
+  gem 'pry-coolline', require: false      # syntax highlighting
+  gem 'pry-byebug', require: true        # debugger (itself buggy; breakpoints not reliable)
 end
+
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'

@@ -11,4 +11,5 @@
 class Organization < ApplicationRecord
   has_many :teams
   extend ScrapeHelpers
+
 end

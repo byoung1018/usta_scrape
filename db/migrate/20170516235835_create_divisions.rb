@@ -7,6 +7,7 @@ class CreateDivisions < ActiveRecord::Migration[5.0]
       t.string :level
       t.string :gender
       t.string :label
+      t.date :last_complete_save
 
       t.timestamps
     end

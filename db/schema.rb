@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 20170517052128) do
     t.string   "level"
     t.string   "gender"
     t.string   "label"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.date     "last_complete_save"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "home_facilities", force: :cascade do |t|
@@ -39,19 +40,23 @@ ActiveRecord::Schema.define(version: 20170517052128) do
   end
 
   create_table "players", force: :cascade do |t|
+    t.string   "fname"
+    t.string   "lname"
     t.string   "name"
     t.integer  "usta_number"
     t.string   "city"
     t.string   "gender"
     t.date     "expiration_date"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.date     "last_complete_save"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "ratings", force: :cascade do |t|
     t.integer  "player_id"
     t.string   "rating_type"
     t.integer  "year"
+    t.string   "level"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -67,12 +72,13 @@ ActiveRecord::Schema.define(version: 20170517052128) do
     t.integer  "captain_id"
     t.integer  "co_captain_id"
     t.string   "area"
-    t.string   "home_facility_id"
-    t.string   "organization_id"
+    t.integer  "home_facility_id"
+    t.integer  "organization_id"
     t.string   "name"
     t.integer  "division_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.date     "last_complete_save"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
 end

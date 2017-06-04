@@ -12,6 +12,77 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/.bundle
 
 # Ignore Byebug command history file.
 .byebug_history
+/log/*.log
+/log/*.log.age
+/tmp
+/ignore
+/doc
+
+public/companies
+public/company_photos
+public/crossdomain.xml
+public/candidate
+public/candidate_profiles
+public/portfolio_assets
+public/reply_attachments
+public/system
+public/whitepapers/
+public/assets
+public/cms
+public/about_items
+
+# ctags index, tags file
+tmtags
+tags
+.tags
+
+# ignore symlink to bootstrap gem
+# app/assets/stylesheets/bootstrap
+
+/dropbox
+
+
+# :/ this really should've been put in /tmp
+/score-generator
+score-generator*
+
+*.swp
+*.swo
+*.pyc
+.byebug_history
+.config
+.fontconfig
+.pki
+.cache
+.env
+.local
+.zeus.sock
+*.DS_Store
+*~
+devauc.sublime-workspace
+coverage/
+lib/tasks/dev.rake
+.idea/
+.rvmrc
+.pryrc
+.tddium*
+.atom*
+*.sublime-workspace
+*.sublime-project
+spec/fixtures/*.yml
+spec/javascripts/json_fixtures/*.json
+spec/javascripts/fixtures/*.html
+db/seeds/demo
+
+/.vagrant
+
+.rspec
+.pryrc
+
+# database dumps
+*.dump
+dump.rdb
